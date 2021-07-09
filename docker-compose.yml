@@ -2,14 +2,14 @@ version: '3.7'
 
 services:
   algo-api:
-    image: orientis/algo-api:0.1.0
+    image: orientis/algo-api:0.1.1
     container_name: algo-api
     restart: always
     ports:
       - "9090:9090"
     
   algo-ui:
-    image: orientis/algo-ui:0.1.0
+    image: orientis/algo-ui:0.1.1
     container_name: algo-ui
     depends_on: 
       - algo-api
